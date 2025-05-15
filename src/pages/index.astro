@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+const siteTitle = "Recycled & Reimagined: Upcycling Community";
+const siteDescription = "Share your passion for upcycling! Tutorials, inspiration, and a community marketplace for unique, eco-friendly creations.";
+---
+
+<Layout title={siteTitle} description={siteDescription}>
+	<section class="hero bg-eco-green text-white py-16 rounded-lg shadow-md">
+		<div class="container mx-auto text-center">
+			<h1 class="text-5xl font-bold mb-6 font-handwritten">Welcome to Recycled & Reimagined!</h1>
+			<p class="text-xl mb-8">A vibrant community for upcycling enthusiasts. Share your projects, learn new techniques, and discover unique, eco-friendly creations.</p>
+			<a href="/blog" class="bg-earth-brown text-white py-3 px-8 rounded-full hover:bg-light-beige hover:text-earth-brown transition-colors duration-300">Explore Tutorials & Inspiration</a>
+		</div>
+	</section>
+
+	<section class="py-12">
+		<div class="container mx-auto">
+			<h2 class="text-3xl font-semibold mb-6">Latest Projects</h2>
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<div class="rounded-lg overflow-hidden shadow-md">
+					<img src="https://placehold.co/600x400.png" alt="Upcycled Denim Bag" data-ai-hint="Upcycled denim bag with floral patches" class="w-full h-48 object-cover">
+					<div class="p-4">
+						<h3 class="text-xl font-semibold mb-2">Upcycled Denim Bag</h3>
+						<p class="text-gray-700">Turn old jeans into a stylish and eco-friendly bag.</p>
+					</div>
+				</div>
+				<div class="rounded-lg overflow-hidden shadow-md">
+					<img src="https://placehold.co/600x400.png" alt="Pallet Furniture" data-ai-hint="Outdoor furniture made from recycled pallets" class="w-full h-48 object-cover">
+					<div class="p-4">
+						<h3 class="text-xl font-semibold mb-2">Pallet Furniture</h3>
+						<p class="text-gray-700">Create unique and rustic furniture from reclaimed wood pallets.</p>
+					</div>
+				</div>
+				<div class="rounded-lg overflow-hidden shadow-md">
+					<img src="https://placehold.co/600x400.png" alt="Glass Bottle Art" data-ai-hint="Colorful artwork made from recycled glass bottles" class="w-full h-48 object-cover">
+					<div class="p-4">
+						<h3 class="text-xl font-semibold mb-2">Glass Bottle Art</h3>
+						<p class="text-gray-700">Transform discarded glass bottles into stunning works of art.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="py-12 bg-gray-100">
+		<div class="container mx-auto text-center">
+			<h2 class="text-3xl font-semibold mb-6">Join Our Community</h2>
+			<p class="text-lg mb-8">Share your upcycling creations, connect with fellow enthusiasts, and earn badges for your contributions!</p>
+			<a href="/forum" class="bg-eco-green text-white py-3 px-8 rounded-full hover:bg-light-beige hover:text-eco-green transition-colors duration-300">Visit the Forum</a>
+		</div>
+	</section>
+</Layout>

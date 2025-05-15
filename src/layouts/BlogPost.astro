@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import type { Props as AstroProps } from 'astro';
+
+interface Props extends AstroProps {
+	title: string;
+	description: string;
+pubDate: string;
+}
+
+const { title, description, pubDate } = Astro.props as Props;
+---
+
+<Layout title={title} description={description}>
+	<div class="prose lg:prose-xl">
+		<h1>{title}</h1>
+		<p class="text-sm text-gray-500">Published: {pubDate}</p>
+		<p>{description}</p>
+		<slot />
+	</div>
+</Layout>
